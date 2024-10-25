@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Emergency contacts</title> <!-- Static title -->
+  <style>/* Global Styles */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      
+      body {
+        font-family: 'Poppins', sans-serif;
+        background: linear-gradient(135deg, #fff 30%, #f3f4f6 100%);
+        color: #333;
+        background-image: url('image/background.jpg'); /* Replace with the actual path of your image */
+        background-size: cover; /* Ensures the image covers the whole page */
+        background-repeat: no-repeat; /* Prevents the image from repeating */
+        background-position: center; /* Centers the image */
+        background-attachment: fixed; /* Keeps the background image fixed while scrolling */
+        font-family: 'Arial', sans-serif; /* Ensures text remains visible */
+      }
+      
+      header {
+        background-color: #ff6f61;
+        color: white;
+        padding: 20px;
+        text-align: center;
+      }
+      
+      h1 {
+        font-size: 24px;
+      }
+      
+      h2 {
+        font-size: 20px;
+        margin-bottom: 20px;
+      }
+      
+      main {
+        max-width: 800px;
+        margin: 40px auto;
+        padding: 20px;
+        background-color: white;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+      }
+      
+      p {
+        font-size: 16px;
+        margin-bottom: 20px;
+      }
+      
+      .btn {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #ff6f61;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+      }
+      
+      .btn:hover {
+        background-color: #ff4f50;
+      }
+      
+      /* Contact Section Styles */
+      #emergency-contacts {
+        display: flex;
+        flex-direction: column;
+      }
+      
+      .contact-card {
+        background-color: #f3f4f6;
+        padding: 20px;
+        margin-bottom: 20px;
+        border-radius: 8px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      }
+      
+      .contact-card h3 {
+        font-size: 18px;
+        margin-bottom: 10px;
+      }
+      
+      .contact-card p {
+        margin-bottom: 5px;
+      }
+      
+      footer {
+        text-align: center;
+        padding: 20px;
+        background-color: #333;
+        color: white;
+        position: relative;
+        bottom: 0;
+        width: 100%;
+      }
+      
+      footer p {
+        margin: 0;
+      }
+      </style>
+</head>
+<body>
+  <header>
+    <h1> Emergency Contacts</h1> <!-- Dynamic app name -->
+  </header>
+
+  <main>
+    <section id="emergency-contacts">
+      <h2>Your Emergency Contacts</h2>
+
+      <!-- Emergency contacts details -->
+      <div class="contact-card">
+        <h3>Parents' Contact</h3>
+        <p>Father: +123 456 7890</p>
+        <p>Mother: +123 456 7891</p>
+      </div>
+
+      <div class="contact-card">
+        <h3>Friends' Contact</h3>
+        <p>Friend 1: +123 456 7892</p>
+        <p>Friend 2: +123 456 7893</p>
+      </div>
+
+      <div class="contact-card">
+        <h3>Nearby Known People</h3>
+        <p>Neighbor: +123 456 7894</p>
+        <p>Colleague: +123 456 7895</p>
+      </div>
+
+      <!-- Back to Home button -->
+      <a href="/" class="btn">Back to Home</a> <!-- Updated for server-side routing -->
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2024 Women Safety App | All Rights Reserved</p> <!-- Dynamic year and app name -->
+  </footer>
+</body>
+</html>
